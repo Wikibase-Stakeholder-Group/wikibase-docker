@@ -1,0 +1,3 @@
+professional-wiki/wikibase-local-media:*
+professional-wiki/wikibase-edtf:^2.0.0
+professional-wiki/wikibase-rdf:dev-master

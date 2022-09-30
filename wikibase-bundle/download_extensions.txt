@@ -1,0 +1,15 @@
+Babel
+CirrusSearch
+cldr
+ConfirmEdit
+Elastica
+EntitySchema
+Nuke
+OAuth
+Scribunto
+SyntaxHighlight_GeSHi
+VisualEditor
+UniversalLanguageSelector
+Wikibase
+WikibaseCirrusSearch
+WikibaseManifest
