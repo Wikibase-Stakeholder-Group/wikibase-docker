@@ -17,7 +17,7 @@ RUN rm download_extension.sh download_extensions.txt
 
 # Compose extensions
 
-FROM mediawiki:1.37-wbsg AS base
+FROM prowiki/mediawiki:37 AS base
 
 COPY --from=composer:2.4.1 /usr/bin/composer /usr/bin/composer
 
