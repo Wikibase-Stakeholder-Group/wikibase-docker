@@ -19,7 +19,7 @@ RUN rm download_extension.sh download_extensions.txt
 
 FROM prowiki/mediawiki:37 AS base
 
-COPY --from=composer:2.4.1 /usr/bin/composer /usr/bin/composer
+COPY --from=composer:2.1 /usr/bin/composer /usr/bin/composer
 
 COPY --from=collector --chown=nobody:nogroup /var/www/html/extensions /var/www/html/extensions
 
@@ -29,13 +29,8 @@ ADD composer.local.json ./
 ADD composer_extension.sh ./
 ADD composer_extensions.txt ./
 
-RUN composer config --no-plugins allow-plugins.composer/installers true
 RUN composer update
-
-
 RUN cat composer_extensions.txt | while read composer_line; do bash composer_extension.sh $composer_line; done
-RUN composer update
-
 
 RUN rm composer_extension.sh composer_extensions.txt /usr/bin/composer
 
