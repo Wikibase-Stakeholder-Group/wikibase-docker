@@ -19,6 +19,7 @@ RUN rm download_extension.sh download_extensions.txt
 
 FROM prowiki/mediawiki:37 AS base
 
+# Use composer 2.1 to avoid issues with Mediawiki
 COPY --from=composer:2.1 /usr/bin/composer /usr/bin/composer
 
 COPY --from=collector --chown=nobody:nogroup /var/www/html/extensions /var/www/html/extensions

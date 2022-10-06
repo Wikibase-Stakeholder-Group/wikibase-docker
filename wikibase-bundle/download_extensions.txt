@@ -1,7 +1,10 @@
 Babel
 CirrusSearch
 cldr
+CodeEditor
+ConfirmAccount
 ConfirmEdit
+DisplayTitle
 Elastica
 EntitySchema
 Nuke
