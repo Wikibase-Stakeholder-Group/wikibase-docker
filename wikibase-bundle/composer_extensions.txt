@@ -1,3 +1,4 @@
+professional-wiki/wikibase-automated-values:~1.0
 professional-wiki/wikibase-edtf:^2.0.0
 professional-wiki/wikibase-local-media:1.0.2
 professional-wiki/wikibase-rdf:~1.0
