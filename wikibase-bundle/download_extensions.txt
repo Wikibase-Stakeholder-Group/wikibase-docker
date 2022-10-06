@@ -16,3 +16,4 @@ UniversalLanguageSelector
 Wikibase
 WikibaseCirrusSearch
 WikibaseManifest
+WikiEditor
