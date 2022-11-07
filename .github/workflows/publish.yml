@@ -23,4 +23,4 @@ jobs:
           context: ./wikibase-bundle
           push: true
           file: ./wikibase-bundle/Dockerfile
-          tags: ghcr.io/wikibase-stakeholder-group/wikibase-bundle:0.1
+          tags: ghcr.io/wikibase-stakeholder-group/wikibase-bundle:1.37-wbsg-1
