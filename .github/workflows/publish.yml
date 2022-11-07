@@ -1,10 +1,9 @@
-name: test workflow
+name: build and publish wikibase-bundle package
 
 on:
   push:
     branches:
       - "main"
-      - "4-publish-docker-image-on-dockerhub"
 
 jobs:
   publish:
