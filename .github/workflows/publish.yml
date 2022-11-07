@@ -18,15 +18,16 @@ jobs:
           ls -al
           cat ./wikibase-bundle/Dockerfile
 
-      # - name: login to ghcr    
-      #   uses: docker/login-action@v2
-      #   with:
-      #     registry: ghcr.io
-      #     username: ${{ github.actor }} 
-      #     password: ${{ secrets.GHCR_TOKEN }} 
-      # - name: build and push to ghcr
-      #   uses: docker/build-push-action@v3
-      #   with:
-      #     context: .
-      #     push: true
-      #     tags: ghcr.io/wikibase-stakeholder-group/wikibase-docker:v0.1
+      - name: login to ghcr    
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }} 
+          password: ${{ secrets.GHCR_TOKEN }} 
+      - name: build and push to ghcr
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          push: true
+          file: ./wikibase-bundle/Dockerfile
+          tags: ghcr.io/wikibase-stakeholder-group/wikibase-docker:v0.1
