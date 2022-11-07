@@ -16,6 +16,7 @@ jobs:
         shell: bash
         run: |
           ls -al
+          cat ./wikibase-bundle/Dockerfile
 
       # - name: login to ghcr    
       #   uses: docker/login-action@v2
