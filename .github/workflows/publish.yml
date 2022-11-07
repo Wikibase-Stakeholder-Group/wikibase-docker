@@ -7,10 +7,14 @@ on:
       - "4-publish-docker-image-on-dockerhub"
 
 jobs:
-  any_name:
+  publish:
     runs-on: ubuntu-latest
     steps:
-      - name: test echo
-        shell: bash
-        run: |
-          echo "hi"
+      - name: checkout code
+        uses: actions/checkout@v3
+      - name: login to ghcr    
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }} 
+          password: ${{ secrets.GHCR_TOKEN }} 
