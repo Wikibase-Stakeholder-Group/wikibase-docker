@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - "main"
+      - "4-publish-docker-image-on-dockerhub"
 
 jobs:
   any_name:
