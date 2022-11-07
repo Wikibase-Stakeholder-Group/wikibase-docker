@@ -23,4 +23,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository }}:latest 
+          tags: ghcr.io/wikibase-stakeholder-group/wikibase-docker:v0.1
